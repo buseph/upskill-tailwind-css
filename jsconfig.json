@@ -1,7 +1,15 @@
 {
   "compilerOptions": {
+    "baseUrl": "./",
     "paths": {
-      "@/*": ["./*"]
+      "@components/*": ["components/*"],
+      "@pages/*": ["pages/*"],
+      "@styles/*": ["styles/*"],
+      "@utils/*": ["utils/*"],
+      "@public/*": ["public/*"],
+      "@context/*": ["context/*"],
+      "@models/*": ["models/*"],
+      "@middlewares/*": ["middlewares/*"]
     }
   }
 }
