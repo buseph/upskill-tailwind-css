@@ -13,8 +13,8 @@ export default function Page() {
 				<link rel="icon" href="/favicon.ico" />
 				<link rel="icon" href="/qr-code/favicon.ico" />
 			</Head>
-			<div className={outfit.className + " flex flex-col items-center justify-center w-full h-screen font-outfit bg-qrColor1"}>
-				<div className='drop-shadow-2xl flex flex-col items-center p-4 text-center bg-white w-[300px] rounded-2xl text-qrColor3'>
+			<div className={outfit.className + " flex flex-col items-center justify-center w-full h-screen font-outfit bg-[#d6e2f0]"}>
+				<div className='shadow-2xl shadow-[#2d7cfa4c] flex flex-col items-center p-4 text-center bg-[#fff] w-[300px] rounded-2xl text-[#1f3251]'>
 					<Image
 						src={qrCodePNG}
 						alt="Picture of the author"
@@ -23,7 +23,7 @@ export default function Page() {
 					<h2 className='w-64 my-4 text-[22px] leading-tight font-bold'>
 						Improve your front-end skills by building projects
 					</h2>
-					<p className='mb-5 text-[15px] w-[250px] leading-tight text-qrColor2'>
+					<p className='mb-5 text-[15px] w-[250px] leading-tight text-[#7b879d]'>
 						Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
 					</p>
 				</div>
