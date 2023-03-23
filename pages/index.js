@@ -17,9 +17,9 @@ export default function Home() {
         <meta name="description" content="jsph.dev | Tailwind Upskilling" />
         <meta name="og:description" content="jsph.dev | Tailwind Upskilling" />
         <meta name="twitter:description" content="jsph.dev | Tailwind Upskilling" />
-        <meta property="og:image" content="/images/og-image.png" />
+        <meta property="og:image" content="/images/qr-code.png" />
       </Head>
-      <main className='flex items-center justify-center w-full h-screen dark:bg-slate-900'>
+      <main className='flex items-center justify-center w-full h-screen bg-slate-900'>
         <ul className={outfit.className + " text-2xl list-disc text-[#d4d4d4] marker:text-[#1020ac]"}>
           <li className='transition-all duration-200 hover:opacity-50'>
             <Link target='_blank' href='/qr-code'>QR Code Component</Link>

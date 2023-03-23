@@ -9,8 +9,13 @@ export default function Page() {
 	return (
 		<>
 			<Head>
-				<title>QR Code</title>
+				<title>QR Code Component</title>
 				<link rel="icon" href="/qr-code/favicon.ico" />
+				<meta name="title" content="QR Code Component" />
+				<meta name="description" content="QR Code Component challenge by Frontend Mentor" />
+				<meta name="og:description" content="QR Code Component challenge by Frontend Mentor" />
+				<meta name="twitter:description" content="QR Code Component challenge by Frontend Mentor" />
+				<meta property="og:image" content="/images/qr-code.png" />
 			</Head>
 			<div className={outfit.className + " flex flex-col items-center justify-center w-full h-screen font-outfit bg-[#d6e2f0]"}>
 				<div className='shadow-2xl shadow-[#2d7cfa4c] flex flex-col items-center p-4 text-center bg-[#fff] w-[300px] rounded-2xl text-[#1f3251]'>
@@ -26,7 +31,12 @@ export default function Page() {
 						Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
 					</p>
 				</div>
-				<p className='text-xs sm:text-sm mt-10 text-[#b8b5dc] [&>*]:text-[#2d7dfa] [&>*]:opacity-70 text-center'>Challenge provided by <a title='This is an awesome website!' target="_blank" className='hover:font-semibold hover:opacity-100' href='https://www.frontendmentor.io'>Frontend Mentor</a>. Site coded by <a title='Wanna see my work? Click here!' target="_blank" className='hover:font-semibold hover:opacity-100' href='https://github.com/buseph'>jsph.dev</a>.</p>
+				<p className='text-xs sm:text-sm mt-10 text-[#b8b5dc] [&>*]:text-[#2d7dfa] [&>*]:opacity-70 text-center'>
+					Challenge provided by
+					<a title='This is an awesome website!' target="_blank" className='hover:font-semibold hover:opacity-100' href='https://www.frontendmentor.io'> Frontend Mentor</a>
+					. <br className='sm:hidden' />Site coded by
+					<a title='Wanna see my work? Click here!' target="_blank" className='hover:font-semibold hover:opacity-100' href='https://github.com/buseph'> jsph.dev</a>.
+				</p>
 			</div>
 		</>
 	)
