@@ -10,7 +10,6 @@ export default function Page() {
 		<>
 			<Head>
 				<title>QR Code</title>
-				<link rel="icon" href="/favicon.ico" />
 				<link rel="icon" href="/qr-code/favicon.ico" />
 			</Head>
 			<div className={outfit.className + " flex flex-col items-center justify-center w-full h-screen font-outfit bg-[#d6e2f0]"}>
