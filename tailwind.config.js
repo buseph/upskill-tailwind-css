@@ -9,12 +9,13 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
-    colors: {
-      white: "#fff",
-      qrColor1: "hsl(212, 45%, 89%)",
-      qrColor2: "hsl(220, 15%, 55%)",
-      qrColor3: "hsl(218, 44%, 22%)",
+    extend: {
+      colors: {
+        white: "#fff",
+        qrColor1: "hsl(212, 45%, 89%)",
+        qrColor2: "hsl(220, 15%, 55%)",
+        qrColor3: "hsl(218, 44%, 22%)",
+      },
     },
   },
   plugins: [],

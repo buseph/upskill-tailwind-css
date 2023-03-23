@@ -13,7 +13,7 @@ export default function Page() {
 				<link rel="icon" href="/favicon.ico" />
 				<link rel="icon" href="/qr-code/favicon.ico" />
 			</Head>
-			<div className={outfit.className + " flex items-center justify-center w-full h-screen font-outfit bg-qrColor1"}>
+			<div className={outfit.className + " flex flex-col items-center justify-center w-full h-screen font-outfit bg-qrColor1"}>
 				<div className='drop-shadow-2xl flex flex-col items-center p-4 text-center bg-white w-[300px] rounded-2xl text-qrColor3'>
 					<Image
 						src={qrCodePNG}
@@ -27,6 +27,7 @@ export default function Page() {
 						Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
 					</p>
 				</div>
+				<p className='text-xs sm:text-sm mt-10 text-[#b8b5dc] [&>*]:text-[#2d7dfa] [&>*]:opacity-70 text-center'>Challenge provided by <a title='This is an awesome website!' target="_blank" className='hover:font-semibold hover:opacity-100' href='https://www.frontendmentor.io'>Frontend Mentor</a>. Site coded by <a title='Wanna see my work? Click here!' target="_blank" className='hover:font-semibold hover:opacity-100' href='https://github.com/buseph'>jsph.dev</a>.</p>
 			</div>
 		</>
 	)
