@@ -24,6 +24,9 @@ export default function Home() {
           <li className='transition-all duration-200 hover:opacity-50'>
             <Link target='_blank' href='/qr-code'>QR Code Component</Link>
           </li>
+          <li className='transition-all duration-200 hover:opacity-50'>
+            <Link target='_blank' href='/result-summary'>Result Summary Component</Link>
+          </li>
         </ul>
       </main>
     </>
