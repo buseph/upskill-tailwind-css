@@ -27,6 +27,9 @@ export default function Home() {
           <li className='transition-all duration-200 hover:opacity-50'>
             <Link target='_blank' href='/result-summary'>Result Summary Component</Link>
           </li>
+          <li className='transition-all duration-200 hover:opacity-50'>
+            <Link target='_blank' href='/product-preview-card'>Product Preview Card Component</Link>
+          </li>
         </ul>
       </main>
     </>
