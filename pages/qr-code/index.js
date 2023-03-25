@@ -3,6 +3,7 @@ import Image from 'next/image'
 import qrCodePNG from '@public/qr-code/image-qr-code.png'
 import { Outfit } from 'next/font/google'
 import HeadSEO from '@components/HeadSEO'
+import Author from '@components/Author'
 
 const outfit = Outfit({ subsets: ['latin'] })
 
@@ -24,12 +25,7 @@ export default function Page() {
 						Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
 					</p>
 				</div>
-				<p className='text-xs sm:text-sm mt-10 text-[#b8b5dc] [&>*]:text-[#2d7dfa] [&>*]:opacity-70 text-center'>
-					Challenge provided by
-					<a title='This is an awesome website!' target="_blank" className='hover:font-semibold hover:opacity-100' href='https://www.frontendmentor.io'> Frontend Mentor</a>
-					. <br className='sm:hidden' />Site coded by
-					<a title='Wanna see my work? Click here!' target="_blank" className='hover:font-semibold hover:opacity-100' href='https://github.com/buseph'> jsph.dev</a>.
-				</p>
+				<Author />
 			</div>
 		</>
 	)
