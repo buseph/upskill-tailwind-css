@@ -10,7 +10,7 @@ export default function HeadSEO({ title, image }) {
 			<meta name="description" content={title + " challenge by Frontend Mentor. Site coded by Joseph Barredo"} />
 			<meta name="og:description" content={title + " challenge by Frontend Mentor. Site coded by Joseph Barredo"} />
 			<meta name="twitter:description" content={title + " challenge by Frontend Mentor. Sit codeed by Joseph Barredo"} />
-			<meta property="og:image" content={`/images/${image}-preview.png`} />
+			<meta property="og:image" content={`/images/${image}-preview.jpg`} />
 		</Head>
 	)
 }
