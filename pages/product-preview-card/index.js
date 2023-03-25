@@ -2,6 +2,7 @@ import React from 'react'
 import { Montserrat, Fraunces } from 'next/font/google'
 import Image from 'next/image'
 import HeadSEO from '@components/HeadSEO'
+import Author from '@components/Author'
 
 const montserrat = Montserrat({ subsets: ['latin'] })
 const fraunces = Fraunces({ subsets: ['latin'] })
@@ -34,6 +35,7 @@ export default function index() {
 						</button>
 					</div>
 				</div>
+				<Author />
 			</main>
 		</>
 	)

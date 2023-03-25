@@ -2,6 +2,7 @@ import React from "react";
 import { Hanken_Grotesk } from "next/font/google";
 import Image from "next/image";
 import HeadSEO from "@components/HeadSEO";
+import Author from "@components/Author";
 
 const hanken = Hanken_Grotesk({ subsets: ["latin"] });
 
@@ -93,12 +94,7 @@ export default function Page() {
 					</button>
 				</div>
 			</div>
-			<p className='text-xs sm:text-sm pb-8 sm:pt-10 text-[#303b5a90] [&>*]:text-[#1125d4] [&>*]:opacity-70 text-center'>
-				Challenge provided by
-				<a title='This is an awesome website!' target="_blank" className='hover:font-semibold hover:opacity-100' href='https://www.frontendmentor.io'> Frontend Mentor</a>
-				. <br className='sm:hidden' />Site coded by
-				<a title='Wanna see my work? Click here!' target="_blank" className='hover:font-semibold hover:opacity-100' href='https://github.com/buseph'> jsph.dev</a>.
-			</p>
+			<Author />
 		</main>
 	</>
 	);
