@@ -1,6 +1,7 @@
 import React from "react";
 import { Hanken_Grotesk } from "next/font/google";
 import Image from "next/image";
+import HeadSEO from "@components/HeadSEO";
 
 const hanken = Hanken_Grotesk({ subsets: ["latin"] });
 
@@ -40,7 +41,8 @@ const data = [
 ];
 
 export default function Page() {
-	return (
+	return (<>
+		<HeadSEO title="Result Summary Component" image="result-summary" />
 		<main className={hanken.className + " w-full h-screen sm:flex sm:flex-col sm:justify-center sm:items-center select-none"}>
 			<div className="flex flex-col sm:flex-row [&>*]:sm:basis-1/2 sm:shadow-2xl sm:shadow-[#1172d433] sm:rounded-3xl sm:w-full sm:max-w-[650px]">
 				<div className="pt-5 pb-9 sm:py-10 gap-6 sm:gap-8 flex flex-col items-center bg-gradient-to-b from-[#7857ff] to-[#2e2be9] rounded-b-3xl sm:rounded-3xl">
@@ -98,5 +100,6 @@ export default function Page() {
 				<a title='Wanna see my work? Click here!' target="_blank" className='hover:font-semibold hover:opacity-100' href='https://github.com/buseph'> jsph.dev</a>.
 			</p>
 		</main>
+	</>
 	);
 }

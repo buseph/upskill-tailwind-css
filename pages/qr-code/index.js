@@ -1,22 +1,15 @@
+import React from 'react'
 import Image from 'next/image'
 import qrCodePNG from '@public/qr-code/image-qr-code.png'
 import { Outfit } from 'next/font/google'
-import Head from 'next/head'
+import HeadSEO from '@components/HeadSEO'
 
 const outfit = Outfit({ subsets: ['latin'] })
 
 export default function Page() {
 	return (
 		<>
-			<Head>
-				<title>QR Code Component</title>
-				<link rel="icon" href="/qr-code/favicon.ico" />
-				<meta name="title" content="QR Code Component" />
-				<meta name="description" content="QR Code Component challenge by Frontend Mentor" />
-				<meta name="og:description" content="QR Code Component challenge by Frontend Mentor" />
-				<meta name="twitter:description" content="QR Code Component challenge by Frontend Mentor" />
-				<meta property="og:image" content="/images/qr-code.png" />
-			</Head>
+			<HeadSEO title="QR Code Component" image="qr-code" />
 			<div className={outfit.className + " flex flex-col items-center justify-center w-full h-screen font-outfit bg-[#d6e2f0]"}>
 				<div className='shadow-2xl shadow-[#2d7cfa4c] flex flex-col items-center p-4 text-center bg-[#fff] w-[300px] rounded-2xl text-[#1f3251]'>
 					<Image
