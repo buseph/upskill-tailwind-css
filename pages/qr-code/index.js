@@ -9,7 +9,7 @@ const outfit = Outfit({ subsets: ['latin'] })
 export default function Page() {
 	return (
 		<>
-			<HeadSEO title="QR Code Component" image="result-summary" />
+			<HeadSEO title="QR Code Component" image="qr-code" />
 			<div className={outfit.className + " flex flex-col items-center justify-center w-full h-screen font-outfit bg-[#d6e2f0]"}>
 				<div className='shadow-2xl shadow-[#2d7cfa4c] flex flex-col items-center p-4 text-center bg-[#fff] w-[300px] rounded-2xl text-[#1f3251]'>
 					<Image

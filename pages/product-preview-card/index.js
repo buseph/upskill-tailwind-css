@@ -10,7 +10,7 @@ export default function index() {
 
 	return (
 		<>
-			<HeadSEO title="Product Preview Card Component" image="" />
+			<HeadSEO title="Product Preview Card Component" image="product-preview-card" />
 			<main className='h-full sm:h-screen flex items-center justify-center bg-[#f2ebe3] select-none'>
 				<div className='py-9 px-6 sm:flex max-w-[730px] drop-shadow-md'>
 					<div className='overflow-hidden sm:basis-1/2 rounded-t-2xl sm:rounded-tr-none sm:rounded-bl-2xl '>
