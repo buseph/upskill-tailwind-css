@@ -1,8 +1,6 @@
 import Head from 'next/head'
 import { Outfit } from 'next/font/google'
-import Link from 'next/link'
-
-const outfit = Outfit({ subsets: ['latin'] })
+import ProjectPreviewCard from '@components/ProjectPreviewCard'
 
 export default function Home() {
   return (
@@ -19,18 +17,12 @@ export default function Home() {
         <meta name="twitter:description" content="jsph.dev | Tailwind Upskilling" />
         <meta property="og:image" content="/images/qr-code.png" />
       </Head>
-      <main className='flex items-center justify-center w-full h-screen bg-slate-900'>
-        <ul className={outfit.className + " text-2xl list-disc text-[#d4d4d4] marker:text-[#1020ac]"}>
-          <li className='transition-all duration-200 hover:opacity-50'>
-            <Link target='_blank' href='/qr-code'>QR Code Component</Link>
-          </li>
-          <li className='transition-all duration-200 hover:opacity-50'>
-            <Link target='_blank' href='/result-summary'>Result Summary Component</Link>
-          </li>
-          <li className='transition-all duration-200 hover:opacity-50'>
-            <Link target='_blank' href='/product-preview-card'>Product Preview Card Component</Link>
-          </li>
-        </ul>
+      <main className='flex items-center justify-center w-full h-full py-20 md:h-screen bg-slate-900'>
+        <div className='grid w-full grid-cols-1 gap-4 px-5 place-items-center sm:grid-cols-2 md:grid-cols-3 max-w-[1000px]'>
+          <ProjectPreviewCard title="QR Code Component" tools="react-next-tailwind" link="/qr-code" image="qr-code-preview.jpg" />
+          <ProjectPreviewCard title="Result Summary Component" tools="react-next-tailwind" link="/result-summary" image="result-summary-preview.jpg" />
+          <ProjectPreviewCard title="Product Preview Card Component" tools="react-next-tailwind" link="/product-preview-card" image="product-preview-card-preview.jpg" />
+        </div>
       </main>
     </>
   )

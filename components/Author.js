@@ -11,6 +11,13 @@ export default function Author() {
 
 	const handleOpen = () => {
 		setOpen(!open)
+
+		// disable scroll
+		if (open) {
+			document.body.style.overflow = 'auto'
+		} else {
+			document.body.style.overflow = 'hidden'
+		}
 	}
 
 	const currentYear = new Date().getFullYear()
@@ -18,11 +25,11 @@ export default function Author() {
 
 	return (
 		<>
-			<div onClick={handleOpen} className={`${open ? 'hidden' : 'flex'} shadow-2xl absolute items-center justify-center align-middle rounded-full cursor-pointer animate-bounce hover:animate w-11 h-11 bg-slate-50 bottom-5 right-5`}>
+			<div onClick={handleOpen} className={`${open ? 'hidden' : 'flex'} shadow-2xl fixed items-center justify-center align-middle rounded-full cursor-pointer animate-bounce hover:animate w-11 h-11 bg-slate-50 bottom-5 right-5`}>
 				<span className={robotoMono.className + " text-2xl font-bold text-[#2e2e2e]"}>i</span>
 			</div>
-			<div className={`${open ? 'scale-100' : 'scale-0'} select-none flex transition-all duration-200 absolute items-center justify-center w-screen h-screen backdrop-blur-sm `}>
-				<div className={outfit.className + ' bg-slate-50 w-80 pt-[40px] px-[40px] pb-5 rounded-xl relative'}>
+			<div className={`${open ? 'scale-100' : 'scale-0'} select-none transition-all duration-200 fixed left-0 top-0 w-screen h-full backdrop-blur-sm flex justify-center items-center `}>
+				<div className={outfit.className + ' bg-slate-50 w-80 pt-[40px] px-[40px] pb-5 rounded-xl shadow-xl relative'}>
 					<svg onClick={handleOpen} className='absolute cursor-pointer w-7 right-4 top-4 text-slate-500' fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
 						<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
 					</svg>
