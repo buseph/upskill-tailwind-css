@@ -15,9 +15,9 @@ const RatingNumber = ({ number, acontent, bcontent, rating, handleClick }) => {
 			onClick={handleClick}
 			className={
 				` ${bcontent} ${activeClass} ` +
-				`${acontent} after:flex after:items-center after:justify-center after:w-[40px] after:h-[40px] after:bg-[#7c8798] after:absolute after:text-[#fff] after:rounded-full after:transition after:ease-in after:duration-200 
-				before:flex before:items-center before:justify-center before:rounded-full before:scale-0  before:transition before:ease-in before:duration-150 before:w-[40px] before:h-[40px] before:bg-[#fb7413] before:text-[#fff] before:absolute 
-				cursor-pointer text-[#959eac] w-[40px] rounded-full h-[40px] flex items-center justify-center `
+				`${acontent} after:flex after:items-center after:justify-center after:w-full after:h-full after:bg-[#7c8798] after:absolute after:text-[#fff] after:rounded-full after:transition after:ease-in after:duration-200 
+				before:flex before:items-center before:justify-center before:rounded-full before:scale-0  before:transition before:ease-in before:duration-150 before:w-full before:h-full before:bg-[#fb7413] before:text-[#fff] before:absolute 
+				cursor-pointer text-[#959eac] w-[40px] rounded-full h-[40px] sm:h-[50px] sm:w-[50px] flex items-center justify-center relative `
 			}
 		>
 			{number}
@@ -51,13 +51,14 @@ export default function Index() {
 
 	return (
 		<main className='bg-[#121417] w-screen h-screen flex justify-center items-center px-5 select-none'>
-			<div className={overpass.className + " min-h-[355px] text-[#fff] bg-gradient-to-b from-[#252d37] to-[#161e29] p-7 rounded-2xl"}>
+			<motion.div initial={{ opacity: 0, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8, delay: 0.5, ease: [0, 0.71, 0.2, 1.01] }}
+				className={overpass.className + " max-w-[340px] sm:max-w-[400px] text-[#fff] bg-gradient-to-b from-[#252d37] to-[#161e29] p-7 sm:p-9 rounded-3xl"}>
 				<div>
-					<div className='w-10 h-10 bg-[#272f39] flex justify-center items-center rounded-full'>
+					<div className='w-10 h-10 sm:w-12 sm:h-12 bg-[#272f39] flex justify-center items-center rounded-full'>
 						<Image className='w-[14px] h-[14px]' src='/interactive-rating/icon-star.svg' width={24} height={24} alt='Star icon' />
 					</div>
-					<h1 className='mt-5 mb-3 text-2xl font-semibold'>How did we do?</h1>
-					<p className='text-[14px] text-[#959eac]'>
+					<h1 className='mt-5 sm:mt-8 mb-3 text-2xl font-semibold sm:text-[28px]'>How did we do?</h1>
+					<p className='text-[14px] sm:text-[15px] text-[#959eac]'>
 						Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
 					</p>
 					<div className='flex justify-between mt-6 text-sm'>
@@ -65,11 +66,11 @@ export default function Index() {
 							<RatingNumber key={index} number={item.number} rating={rating} bcontent={item.bcontent} acontent={item.acontent} handleClick={item.handleClick} />
 						))}
 					</div>
-					<button onClick={handleSubmit} className='hover:bg-[#fff] hover:text-[#fb7413] text-sm ease-in duration-150 w-full bg-[#fb7413] py-3 font-medium tracking-widest rounded-full mt-6'>SUBMIT</button>
+					<button onClick={handleSubmit} className='hover:bg-[#fff] hover:text-[#fb7413] text-sm ease-in duration-150 w-full bg-[#fb7413] py-3 font-medium tracking-widest rounded-full mt-6 sm:mt-8'>SUBMIT</button>
 					<div>
 					</div>
 				</div>
-			</div>
+			</motion.div>
 		</main>
 	)
 }
