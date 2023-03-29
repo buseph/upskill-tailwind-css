@@ -1,8 +1,35 @@
 import Head from 'next/head'
-import { Outfit } from 'next/font/google'
 import ProjectPreviewCard from '@components/ProjectPreviewCard'
 
 export default function Home() {
+
+  const projects = [
+    {
+      title: 'QR Code Component',
+      tools: 'react-next-tailwind',
+      link: '/qr-code',
+      image: 'qr-code-preview.jpg'
+    },
+    {
+      title: 'Result Summary Component',
+      tools: 'react-next-tailwind',
+      link: '/result-summary',
+      image: 'result-summary-preview.jpg'
+    },
+    {
+      title: 'Product Preview Card Component',
+      tools: 'react-next-tailwind',
+      link: '/product-preview-card',
+      image: 'product-preview-card-preview.jpg'
+    },
+    {
+      title: 'Interactive Rating Component',
+      tools: 'react-next-tailwind-framer',
+      link: '/interactive-rating',
+      image: 'interactive-rating-preview.jpg'
+    }
+  ]
+
   return (
     <>
       <Head>
@@ -17,11 +44,11 @@ export default function Home() {
         <meta name="twitter:description" content="jsph.dev | Tailwind Upskilling" />
         <meta property="og:image" content="/images/qr-code.png" />
       </Head>
-      <main className='flex items-center justify-center w-full h-full py-20 md:h-screen bg-slate-900'>
-        <div className='grid w-full grid-cols-1 gap-4 px-5 place-items-center sm:grid-cols-2 md:grid-cols-3 max-w-[1000px]'>
-          <ProjectPreviewCard title="QR Code Component" tools="react-next-tailwind" link="/qr-code" image="qr-code-preview.jpg" />
-          <ProjectPreviewCard title="Result Summary Component" tools="react-next-tailwind" link="/result-summary" image="result-summary-preview.jpg" />
-          <ProjectPreviewCard title="Product Preview Card Component" tools="react-next-tailwind" link="/product-preview-card" image="product-preview-card-preview.jpg" />
+      <main className='flex items-center justify-center w-full h-full bg-slate-900'>
+        <div className='grid w-full grid-cols-1 gap-4 py-40 px-5 place-items-center sm:grid-cols-2 md:grid-cols-3 max-w-[1000px]'>
+          {projects.map((project, index) => (
+            <ProjectPreviewCard key={index} title={project.title} tools={project.tools} link={project.link} image={project.image} />
+          ))}
         </div>
       </main>
     </>
