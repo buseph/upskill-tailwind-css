@@ -1,10 +1,10 @@
 import React from "react";
-import { Hanken_Grotesk } from "next/font/google";
+import { Quicksand } from "next/font/google";
 import Image from "next/image";
 import HeadSEO from "@components/HeadSEO";
 import Author from "@components/Author";
 
-const hanken = Hanken_Grotesk({ subsets: ["latin"] });
+const quicksand = Quicksand({ subsets: ["latin"] });
 
 const data = [
 	{
@@ -44,7 +44,7 @@ const data = [
 export default function Page() {
 	return (<>
 		<HeadSEO title="Result Summary Component" image="result-summary" />
-		<main className={hanken.className + " w-screen h-full sm:h-screen sm:flex sm:flex-col sm:justify-center sm:items-center select-none"}>
+		<main className={quicksand.className + " w-screen h-full sm:h-screen sm:flex sm:flex-col sm:justify-center sm:items-center select-none"}>
 			<div className="flex flex-col sm:flex-row [&>*]:sm:basis-1/2 sm:shadow-2xl sm:shadow-[#1172d433] sm:rounded-3xl sm:w-full sm:max-w-[650px]">
 				<div className="pt-5 pb-9 sm:py-10 gap-6 sm:gap-8 flex flex-col items-center bg-gradient-to-b from-[#7857ff] to-[#2e2be9] rounded-b-3xl sm:rounded-3xl">
 					<h2 className="text-[#c8c7ff] font-medium text-base sm:text-xl">Your Result</h2>
