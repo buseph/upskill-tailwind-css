@@ -27,6 +27,12 @@ export default function Home() {
       tools: 'react-next-tailwind-framer',
       link: '/interactive-rating',
       image: 'interactive-rating-preview.jpg'
+    },
+    {
+      title: 'Croud Funding Landing Page',
+      tools: 'react-next-tailwind-framer',
+      link: '/crowd-funding',
+      image: 'crowd-funding-preview.jpg'
     }
   ]
 
