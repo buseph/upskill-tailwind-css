@@ -36,7 +36,7 @@ export default function Author() {
 					<div className='flex flex-col items-center'>
 						<hr className='w-[10rem]' />
 						<p className='text-[#514c6a]'>
-							Challenge provided by
+							Challenge by
 						</p>
 					</div>
 					<hr />
@@ -46,7 +46,7 @@ export default function Author() {
 					<div className='flex flex-col items-center mt-2'>
 						<hr className='w-[6rem]' />
 						<p className='text-[#514c6a]'>
-							Site coded by
+							Developed by
 						</p>
 					</div>
 					<hr />
