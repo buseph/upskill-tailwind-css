@@ -51,7 +51,7 @@ export default function Author() {
 					</div>
 					<hr />
 					<Link href='https://github.com/buseph' target='_blank' className='flex items-center justify-center gap-3 py-5'>
-						<Image className='rounded-full ' src="/images/me.jfif" width={40} height={40} alt="Picture of the author" />
+						<Image className='rounded-full ' src="/images/me.png" width={40} height={40} alt="Picture of the author" />
 						<h2 className='text-xl underline-offset-auto'>JSPH.dev</h2>
 					</Link>
 					<hr />
