@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
-import { Outfit } from 'next/font/google'
+import { Quicksand } from 'next/font/google'
 import Link from 'next/link'
 
-const outfit = Outfit({ subsets: ['latin'] })
+const quicksand = Quicksand({ subsets: ['latin'] })
 
 export default function ProjectPreviewCard({ title, tools, link, image }) {
 	const [projectTools, setTools] = useState([]);
@@ -30,7 +30,7 @@ export default function ProjectPreviewCard({ title, tools, link, image }) {
 					<Image className='w-full transition-all duration-200 cursor-pointer hover:scale-110' src={`/images/${image}`} alt='' width={200} height={200} />
 				</Link>
 			</div>
-			<div className={outfit.className + " bg-white p-3 h-full"}>
+			<div className={quicksand.className + " bg-white p-3 h-full"}>
 				<h3 className='text-base leading-tight sm:text-lg sm:leading-tight font-base text-slate-800'>{title}</h3>
 				<hr className='my-2' />
 				<div className='[&>*]:font-bold [&>*]:text-xs [&>*]:sm:text-base flex space-x-2 flex-wrap '>

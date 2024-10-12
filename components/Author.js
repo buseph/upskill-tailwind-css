@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import { Roboto_Mono, Outfit } from 'next/font/google'
+import { Roboto_Mono, Quicksand } from 'next/font/google'
 import Image from 'next/image'
 import Link from 'next/link'
 
-const outfit = Outfit({ subsets: ['latin'] })
+const quicksand = Quicksand({ subsets: ['latin'] })
 const robotoMono = Roboto_Mono({ subsets: ['latin'] })
 
 export default function Author() {
@@ -29,7 +29,7 @@ export default function Author() {
 				<span className={robotoMono.className + " text-2xl font-bold text-[#2e2e2e]"}>i</span>
 			</div>
 			<div className={`${open ? 'scale-100' : 'scale-0'} select-none transition-all duration-200 fixed left-0 top-0 w-screen h-full backdrop-blur-sm flex justify-center items-center `}>
-				<div className={outfit.className + ' bg-slate-50 w-80 pt-[40px] px-[40px] pb-5 rounded-xl shadow-xl relative'}>
+				<div className={quicksand.className + ' bg-slate-50 w-80 pt-[40px] px-[40px] pb-5 rounded-xl shadow-xl relative'}>
 					<svg onClick={handleOpen} className='absolute cursor-pointer w-7 right-4 top-4 text-slate-500' fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
 						<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
 					</svg>
