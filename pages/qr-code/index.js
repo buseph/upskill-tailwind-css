@@ -5,7 +5,7 @@ import { Outfit } from 'next/font/google'
 import HeadSEO from '@components/HeadSEO'
 import Author from '@components/Author'
 // import the text from the text.js file
-import * as txt from './text'
+import txt from './text'
 
 const outfit = Outfit({ subsets: ['latin'] })
 
