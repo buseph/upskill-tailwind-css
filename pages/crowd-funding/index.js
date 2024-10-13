@@ -3,7 +3,7 @@ import Image from "next/image";
 import Author from "@components/Author";
 import HeadSEO from "@components/HeadSEO";
 import { Commissioner } from "next/font/google";
-import NAVBAR_TEXTS from './text'
+import txt from './text'
 
 const commissioner = Commissioner({ subsets: ['latin'], })
 
@@ -23,7 +23,7 @@ export default function Index() {
 							</div>
 							{/* Navbar Links */}
 							<ul className="flex space-x-10 text-lg text-shadow-lg">
-								{NAVBAR_TEXTS.map((item, index) => (
+								{txt.NAVBAR_TEXTS.map((item, index) => (
 									<li key={index}>
 										<a href={item.link} className="select-none">{item.title}</a>
 									</li>

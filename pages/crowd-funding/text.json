@@ -1,0 +1,16 @@
+{
+	"NAVBAR_TEXTS": [
+		{
+			"title": "About",
+			"link": "#"
+		},
+		{
+			"title": "Discover",
+			"link": "#"
+		},
+		{
+			"title": "Get Started",
+			"link": "#"
+		}
+	]
+}
