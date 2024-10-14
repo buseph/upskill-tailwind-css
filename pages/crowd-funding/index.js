@@ -9,7 +9,7 @@ import txt from './text'
 const commissioner = Commissioner({ subsets: ['latin'], })
 
 export default function Index() {
-	const [isBookmarked, setIsBookmarked] = React.useState(true);
+	const [isBookmarked, setIsBookmarked] = React.useState(false);
 
 	// Bookmark button handler
 	const bookmarkHandler = () => {
@@ -19,7 +19,7 @@ export default function Index() {
 	return (
 		<>
 			<HeadSEO title="Crowd Funding Landing Page" description="Crowd Funding Landing Page" image="crowd-funding-preview" />
-			<main className={commissioner.className + " h-screen bg-[#fafafa]"}>
+			<main className={commissioner.className + " h-full bg-[#fafafa]"}>
 				{/* Navbar with Background Image */}
 				<div className="relative h-[30rem] bg-[url('/crowd-funding/image-hero-desktop.jpg')] bg-center bg-cover max-w-[1920px] w-full mx-auto">
 					{/* Navbar */}
