@@ -19,5 +19,21 @@
 		"button": "Back this project",
 		"bookmark": "Bookmark",
 		"bookmarked": "Bookmarked"
+	},
+	"SECOND_SECTION": {
+		"pledged": {
+			"amount": 89914
+		},
+		"goal": {
+			"amount": 100000
+		},
+		"backers": {
+			"title": "total backers",
+			"amount": 5007
+		},
+		"days_left": {
+			"title": "days Left",
+			"amount": 56
+		}
 	}
 }

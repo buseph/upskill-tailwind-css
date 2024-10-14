@@ -19,9 +19,9 @@ export default function Index() {
 	return (
 		<>
 			<HeadSEO title="Crowd Funding Landing Page" description="Crowd Funding Landing Page" image="crowd-funding-preview" />
-			<main className={commissioner.className + " h-full bg-[#fafafa]"}>
+			<main className={commissioner.className + " h-full bg-[#fafafa] relative"}>
 				{/* Navbar with Background Image */}
-				<div className="relative h-[30rem] bg-[url('/crowd-funding/image-hero-desktop.jpg')] bg-center bg-cover max-w-[1920px] w-full mx-auto">
+				<div className="h-[30rem] bg-[url('/crowd-funding/image-hero-desktop.jpg')] bg-center bg-cover max-w-[1920px] w-full mx-auto">
 					{/* Navbar */}
 					<header className="grid place-items-center">
 						<nav className="flex items-center justify-between py-16 text-white max-w-[93rem] w-[90vw]">
@@ -41,9 +41,9 @@ export default function Index() {
 				</div>
 
 				{/* Main Content */}
-				<div className="grid place-items-center">
+				<div className="grid place-items-center bg-red mt-[-7rem] gap-10">
 					{/* First Section */}
-					<section className="absolute grid place-items-center w-[55vw] max-w-[66rem] min-w-[66rem] rounded-lg border-[#f5f5f5] bg-white border-2 select-none px-24 pb-16">
+					<section className="grid place-items-center w-[55vw] max-w-[66rem] min-w-[66rem] rounded-lg border-[#f5f5f5] bg-white border-2 select-none px-24 pb-16">
 						<Image src="/crowd-funding/logo-mastercraft.svg" alt="Crowd Funding Master Craft Image" width={70} height={70} className="relative top-[-2.5rem]" />
 						{/* First Section Title */}
 						<h1 className="text-4xl font-bold">{txt.FIRST_SECTION.title}</h1>
@@ -59,6 +59,27 @@ export default function Index() {
 									{isBookmarked ? txt.FIRST_SECTION.bookmarked : txt.FIRST_SECTION.bookmark}
 								</span>
 							</button>
+						</div>
+					</section>
+
+					<section className="w-[55vw] max-w-[66rem] min-w-[66rem] rounded-lg border-[#f5f5f5] bg-white border-2 select-none px-24 py-16">
+						<div className="flex gap-14">
+							<div>
+								<h1 className="text-5xl font-bold">${txt.SECOND_SECTION.pledged.amount.toLocaleString('en-US')}</h1>
+								<p className="pt-5 text-xl font-light text-gray-400">of ${txt.SECOND_SECTION.goal.amount.toLocaleString('en-US')} backed</p>
+							</div>
+							<div className="px-14 border-x-2">
+								<h1 className="text-5xl font-bold ">{txt.SECOND_SECTION.backers.amount.toLocaleString('en-US')}</h1>
+								<p className="pt-5 text-xl font-light text-gray-400">{txt.SECOND_SECTION.backers.title}</p>
+							</div>
+							<div>
+								<h1 className="text-5xl font-bold">{txt.SECOND_SECTION.days_left.amount}</h1>
+								<p className="pt-5 text-xl font-light text-gray-400">{txt.SECOND_SECTION.days_left.title}</p>
+							</div>
+						</div>
+						{/* Progress Bar */}
+						<div className="w-full bg-gray-200 rounded-full h- mt-14">
+							<div className="bg-[#3cb4ab] h-4 rounded-full transition-all duration-300 w-[80%]"></div>
 						</div>
 					</section>
 				</div>
