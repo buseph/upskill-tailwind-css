@@ -78,7 +78,7 @@ export default function Index() {
 							</div>
 						</div>
 						{/* Progress Bar */}
-						<div className="w-full bg-gray-200 rounded-full h- mt-14">
+						<div className="w-full h-4 bg-gray-200 rounded-full mt-14">
 							<div className="bg-[#3cb4ab] h-4 rounded-full transition-all duration-300 w-[80%]"></div>
 						</div>
 					</section>
