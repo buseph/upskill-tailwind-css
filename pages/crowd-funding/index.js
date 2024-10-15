@@ -62,6 +62,7 @@ export default function Index() {
 						</div>
 					</section>
 
+					{/* Second Section */}
 					<section className="w-[55vw] max-w-[66rem] min-w-[66rem] rounded-lg border-[#f5f5f5] bg-white border-2 select-none px-24 py-16">
 						<div className="flex gap-14">
 							<div>
@@ -81,6 +82,26 @@ export default function Index() {
 						<div className="w-full h-4 bg-gray-200 rounded-full mt-14">
 							<div className="bg-[#3cb4ab] h-4 rounded-full transition-all duration-300 w-[80%]"></div>
 						</div>
+					</section>
+
+
+					{/* Third Section */}
+					<section className="w-[55vw] max-w-[66rem] min-w-[66rem] rounded-lg border-[#f5f5f5] bg-white border-2 select-none px-24 py-16">
+						<article>
+							<h1 className="text-2xl font-bold">About this project</h1>
+							<div className="text-xl *:font-light *:leading-8 *:text-gray-400">
+								<p className="py-10">
+									The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that elevates your screen
+									to a more comfortable viewing height. Placing your monitor at eye level has the potential to improve
+									your posture and make you more comfortable while at work, helping you stay focused on the task at hand.
+								</p>
+								<p>
+									Featuring artisan craftsmanship, the simplicity of design creates extra desk space below your computer
+									to allow notepads, pens, and USB sticks to be stored under the stand.
+								</p>
+							</div>
+
+						</article>
 					</section>
 				</div>
 				<Author />
